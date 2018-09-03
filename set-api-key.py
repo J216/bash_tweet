@@ -33,5 +33,5 @@ if 'Y' in existing_key or 'y' in existing_key:
 else:
     existing_key = raw_input('Would you like to open the Twitter page to obtain an API key in your browser? (Yes/No)')
     if 'Y' in existing_key or 'y' in existing_key:
-        webbrowser.open("https://xkcd.com/353/")
+        webbrowser.open("https://stackoverflow.com/questions/1808855/getting-new-twitter-api-consumer-and-secret-keys")
 
