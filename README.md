@@ -1,5 +1,8 @@
-# bash_tweet
-bash script using python script to send tweet of image and or status update text. tweet "Your tweet" ./happy
+<h1># bash_tweet</h1>
+<p>
+bash script using python script to send tweet of image and or status update text. <br>
+tweet "Your tweet" ./happy
+</p>
 <p>
 Example Status Update: tweet 'Your tweet here' <br>
 Example Tweet Image : tweet 'Your image tweet here' /path/to/your/image.jpg
