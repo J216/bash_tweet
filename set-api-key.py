@@ -17,7 +17,7 @@ def set_keys():
     cs_in = input('Enter your Consumer Secret:')
     SET_KEY = BLANK_KEY.replace('ATK',atk_in).replace('ATS',ats_in).replace('CK',ck_in).replace('CS',cs_in)
     try:
-        if os.path.exists(os.path.expanduser('~/.tweet/')):
+        if not os.path.exists(os.path.expanduser('~/.tweet/')):
             os.mkdir(os.path.expanduser('~/.tweet/'))
         f = open(os.path.expanduser('~/.tweet/tweetkey.py), "w")
         f.write(SET_KEY)
@@ -31,5 +31,7 @@ existing_key = input('Do you currently have a Twitter API key? (Yes/No)')
 if 'Y' in existing_key or 'y' in existing_key:
     set_keys()
 else:
-    webbrowser.open("https://xkcd.com/353/")
+    existing_key = input('Would you like to open the Twitter page to obtain an API key in your browser? (Yes/No)')
+    if 'Y' in existing_key or 'y' in existing_key:
+        webbrowser.open("https://xkcd.com/353/")
 
