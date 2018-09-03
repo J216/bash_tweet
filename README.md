@@ -4,8 +4,10 @@ bash script using python script to send tweet of image and or status update text
 tweet "Your tweet" ./happy
 </p>
 <p>
-Example Status Update: tweet 'Your tweet here' <br>
-Example Tweet Image : tweet 'Your image tweet here' /path/to/your/image.jpg
+Example Status Update:  <br>
+  tweet 'Your tweet here' <br>
+Example Tweet Image : <br>
+  tweet 'Your image tweet here' /path/to/your/image.jpg
 </p>
 <p>
 sudo mv ./tweet /usr/bin/tweet <br>
