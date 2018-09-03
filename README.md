@@ -15,15 +15,14 @@ tweet 'Your image tweet here' /path/to/your/image.jpg
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Python and the following modules are required
 
 ```
-Python TwitterAPI
+TwitterAPI
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
 
 Copy the bash and Python script to /usr/bin/
 
