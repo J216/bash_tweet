@@ -34,8 +34,7 @@ sudo mv ./tweet.py /usr/bin/tweet.py
 Add folder and file for storing Twitter API key
 
 ```
-mkdir ~/.tweet
-mv ./tweetkey.py ~/.tweet/tweetkey.py
+python set-api-key.py
 ```
 
 
