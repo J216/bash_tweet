@@ -18,6 +18,14 @@ def set_keys():
     if len(atk_in) < 6 or len(ats_in) < 6 or len(ck_in) < 6 or len(cs_in) < 6 :
         print("Setting TwitterAPI key failed. \nVerify your key is correct and run `python set-api-key.py` try again.")
         SET_KEY = 'print("Setting TwitterAPI key failed. \nVerify your key is correct and run `python set-api-key.py` try again.")'
+        if not os.path.exists(os.path.expanduser('~/.tweet/tweetkey.py')):
+            try:
+                os.mkdir(os.path.expanduser('~/.tweet/'))
+                f = open(os.path.expanduser('~/.tweet/tweetkey.py'), "w")
+                f.write(SET_KEY)
+                f.close()
+            except:
+                print('Failed to write error file.')
     else:
         SET_KEY = BLANK_KEY.replace('ATK',atk_in).replace('ATS',ats_in).replace('CK',ck_in).replace('CS',cs_in)
         try:
