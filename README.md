@@ -24,14 +24,13 @@ TwitterAPI
 ### Installing
 
 
-Copy the bash and Python script to /usr/bin/
+Run script to copy the bash and Python script to /usr/bin/ and creates api key in user home folder
 
 ```
-sudo mv ./tweet /usr/bin/tweet
-sudo mv ./tweet.py /usr/bin/tweet.py
+sudo setup.sh
 ```
 
-Add folder and file for storing Twitter API key
+Run the following to change/set your api key, setup.sh automatically runs this. You can run it again later to change your api keys.
 
 ```
 python set-api-key.py
