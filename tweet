@@ -1,0 +1,12 @@
+if [ -z "$1" ]
+then
+    echo "Please enter a tweet." 
+    echo "Example Status Update: tweet "Your tweet here"
+    echo "Example Tweet Image : tweet "Your image tweet here" /path/to/your/image.jpg
+elif [ -z "$2" ]
+then 
+    python tweet.py "$1"
+elif [ -z "$3" ]
+then
+    python tweet.py "$1" "$2"
+fi
