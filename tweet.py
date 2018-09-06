@@ -9,6 +9,7 @@ from tweetkey import *
 def tweet(message):
     api = ta.TwitterAPI(consumer_key, consumer_secret, access_token_key, access_token_secret)
     r = api.request('statuses/update', {'status': message})
+    print(r.status_code+'\n'+consumer_key)
     return 'SUCCESS' if r.status_code == 200 else 'FAILURE'
 
 def tweetImage(message,image_file):
